@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Reddit Mono", monospace;;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/images/me.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+span{
+    color: #FF0000;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    justify-content: space-around;
+    padding:0 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #FF0033;
+    transition: all .4s;
+}
+nav .btn{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: red;
+    font-weight: bold;
+}
+nav .btn:hover{
+    color: red;
+    background-color: white;
+    transition: .5s ease-in-out;
+
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: white;
+    margin: 20px 0 20px 0;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 75px;
+}
+h4{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child{
+    width: 100%;
+    display: inline-block;
+    padding: 14px 130px 14px 15px;
+    outline: none;
+    border:2px solid hotpink ;
+    border-radius: 25px;
+}
+.newsletter form input:last-child{
+    outline: none;
+    border: none;
+    position: absolute;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color:hotpink ;
+    color: white;
+    font-weight: bold;
+    top: 6px;
+    right: 6px;
+    box-shadow: 0 0 5px #000, 0 0 15px #858585;
+}
+
+.about{
+    width: 100%;
+    padding-top: 0px;
+    background-color: rgb(0, 0, 0);
+}
+.about img{
+    width: 430px;
+    height: auto;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.about-text h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 75px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+.about-text h5{
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.about-text p{
+    color: #fcfc;
+    line-height: 25px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+
+button{
+    color:white ;
+    background-color: hotpink;
+    padding: 13px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition:  all .4s;
+    cursor: pointer;
+}
+button:hover{
+    color: hotpink;
+    background-color: white;
+    box-shadow:0 0 5px #000, 0 0 15px #858585 ;
+    transition: ease-in-out .5s;
+
+}
+
+.services{
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    font-size: 75px;
+    margin:10px auto;
+    color: white;
+    align-items: center;
+    width: 1130px; 
+}
+.box{
+    min-height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 36px;
+    background-color: #191919;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+}
+
+.card .icon{
+    font-size: 50px;
+    color: #FF0033;
+    cursor: pointer;
+}
+.card .icon:hover{
+    color: white;
+    font-size: 45px;
+    transition: all .4s;
+}
+.card h5{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.pra{
+    font-size: 15px;
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card .button {
+    color:white ;
+    background-color: hotpink;
+    padding: 13px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition:  all .4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.card .button:hover{
+    color: hotpink;
+    background-color: white;
+    box-shadow:0 0 5px #000, 0 0 15px #858585 ;
+    transition: ease-in-out .5s;
+}
+
+.contact{
+    height: 260px;
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.contact .button-two{
+    color:white ;
+    background-color: hotpink;
+    padding: 13px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition:  all .4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contact .button-two:hover{
+    color: hotpink;
+    background-color: white;
+    box-shadow:0 0 5px #000, 0 0 15px #858585 ;
+    transition: ease-in-out .5s;
+}
